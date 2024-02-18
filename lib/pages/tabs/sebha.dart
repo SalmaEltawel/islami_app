@@ -27,7 +27,7 @@ class _SebhaTapState extends State<SebhaTap> {
               height: 105,
               width: 73,
               child:
-                  Image(image: AssetImage("assets/images/head of seb7a.png"))),
+                  const Image(image: AssetImage("assets/images/head of seb7a.png"))),
           Container(
               height: 234,
               width: 232,
@@ -39,9 +39,9 @@ class _SebhaTapState extends State<SebhaTap> {
                   });
                 },
                 child:
-                    Image(image: AssetImage("assets/images/body of seb7a.png")),
+                    const Image(image: AssetImage("assets/images/body of seb7a.png")),
               )),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Text(
@@ -49,13 +49,13 @@ class _SebhaTapState extends State<SebhaTap> {
             style: GoogleFonts.elMessiri(
                 fontSize: 25, fontWeight: FontWeight.w600),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
-              color: Color(0xffB7935F),
+              color: const Color(0xffB7935F),
             ),
             width: 69,
             height: 81,
@@ -67,7 +67,7 @@ class _SebhaTapState extends State<SebhaTap> {
                   GoogleFonts.elMessiri(fontWeight: FontWeight.w400, fontSize: 25),
             )),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Container(
@@ -75,7 +75,7 @@ class _SebhaTapState extends State<SebhaTap> {
               height: 51,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                color: Color(0xffB7935F),
+                color: const Color(0xffB7935F),
               ),
               child: Center(
                   child: Text(

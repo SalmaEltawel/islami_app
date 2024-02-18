@@ -9,12 +9,12 @@ class AhadethTap extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image(
+        const Image(
           image: AssetImage("assets/images/hadeth_header.png"),
           width: 312,
           height: 219,
         ),
-        Divider(
+        const Divider(
           color: Color(0xffB7935F),
           thickness: 3,
         ),
@@ -24,7 +24,7 @@ class AhadethTap extends StatelessWidget {
           style:
           GoogleFonts.elMessiri(fontSize: 25, fontWeight: FontWeight.w600,),
         ),
-        Divider(
+        const Divider(
           color: Color(0xffB7935F),
           thickness: 3,
         ),

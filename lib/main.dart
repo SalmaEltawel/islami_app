@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: SplashScreen.routeName,
       routes: {
+
         SplashScreen.routeName:(context)=>SplashScreen(),
         IslamiScreen.routeName:(context)=>IslamiScreen(),
         SuraDetails.routeName:(context)=>SuraDetails(),

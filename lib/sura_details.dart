@@ -22,7 +22,7 @@ class _SuraDetailsState extends State<SuraDetails> {
       readSuraFile(suraModel.index);
     }
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           image: DecorationImage(
               image: AssetImage(
         "assets/images/bg3.png",
@@ -39,11 +39,11 @@ class _SuraDetailsState extends State<SuraDetails> {
           ),
         ),
         body: Container(
-          padding: EdgeInsets.all(12),
-          margin: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(12),
+          margin: const EdgeInsets.all(16),
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(25)),
           child: ListView.separated(
-            separatorBuilder: (context, index) => Divider(
+            separatorBuilder: (context, index) => const Divider(
               thickness: 1,
               color: Color(0xffB7935F),
               endIndent: 50,
