@@ -89,8 +89,6 @@ class _SebhaTapState extends State<SebhaTap> {
   }
 
   onClickImage() {
-    for (int i = 0; i <= 30; i++) {
-    }
     if (counter == 30) {
       counter = 0;
       index++;

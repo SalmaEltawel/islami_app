@@ -4,6 +4,7 @@ import 'package:islami_project1/pages/tabs/ahadeth.dart';
 import 'package:islami_project1/pages/tabs/quran.dart';
 import 'package:islami_project1/pages/tabs/radio.dart';
 import 'package:islami_project1/pages/tabs/sebha.dart';
+import 'package:islami_project1/pages/tabs/setting.dart';
 
 class IslamiScreen extends StatefulWidget {
   IslamiScreen({super.key});
@@ -27,10 +28,7 @@ class _IslamiScreenState extends State<IslamiScreen> {
           fit: BoxFit.fill,
         ),
         Scaffold(
-          backgroundColor: Colors.transparent,
           appBar: AppBar(
-            centerTitle: true,
-            backgroundColor: Colors.transparent,
             title: Text(
               "اسلامي",
               style: GoogleFonts.elMessiri(
@@ -44,12 +42,6 @@ class _IslamiScreenState extends State<IslamiScreen> {
                 setState(() {});
               },
               iconSize: 30,
-              backgroundColor: Color.fromARGB(255, 183, 147, 95),
-              type: BottomNavigationBarType.fixed,
-              showSelectedLabels: false,
-              showUnselectedLabels: false,
-              unselectedItemColor: Colors.white,
-              selectedItemColor: Colors.black,
               items: [
                 BottomNavigationBarItem(
                   icon: ImageIcon(
@@ -75,19 +67,24 @@ class _IslamiScreenState extends State<IslamiScreen> {
                   ),
                   label: "",
                 ),
+                BottomNavigationBarItem(
+                  icon: ImageIcon(
+                    AssetImage("assets/images/setting.png"),
+                  ),
+                  label: "",
+                ),
               ]),
           body: tabs[index],
-
         )
       ],
     );
   }
-  List<Widget>tabs=[
+
+  List<Widget> tabs = [
     QuranTab(),
     SebhaTap(),
     AhadethTap(),
     RadioTap(),
-
-
+    Setting(),
   ];
 }
